@@ -1,0 +1,100 @@
+#nav {
+  width: 100vw;
+  height: 6vh;
+  background-color: #2d3545;
+  .links {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    .left {
+      display: flex;
+    }
+    .right {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+      .title {
+        p {
+          margin: 0;
+          &:nth-child(2) {
+            font-weight: 300;
+            font-size: 1.3vh;
+          }
+        }
+      }
+      .links {
+        a {
+          margin: 0 1vw;
+          i {
+            font-size: 2.3vh;
+          }
+        }
+      }
+      .title {
+        text-align: right;
+        margin: 0 2vw;
+      }
+    }
+    .link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin: 1.5vh 3vw;
+      a {
+        text-decoration: none;
+        display: flex;
+      }
+      &.email {
+        margin: 1.5vh 3vw ;
+      }
+      a.active {
+        i {
+          color: orange;
+        }
+      }
+    }
+    i {
+      color: #ccc;
+      font-size: 2.3vh;
+      &:hover {
+        color: orange;
+      }
+      &.fa-envelope-o {
+        color: orange;
+      }
+    }
+  }
+
+  @media screen and (min-width: 400px) {
+    .link {
+      font-size: 6vw !important;
+    }
+  }
+  @media screen and (min-width: 500px) {
+    .link {
+      font-size: 5vw !important;
+    }
+  }
+  @media screen and (min-width: 680px) {
+    .link {
+      font-size: 4vw !important;
+    }
+  }
+
+  @media screen and (min-width: 900px) {
+    .link {
+      font-size: 3vw !important;
+    }
+  }
+  @media screen and (min-width: 1100px) {
+    .link {
+      font-size: 2.5vw !important;
+    }
+  }
+}

@@ -1,0 +1,48 @@
+#home {
+  // border: solid yellow 3px;
+  .top {
+    min-height: 67vh;
+  }
+  .footer {
+
+    h1 {
+      font-weight: 300;
+    }
+  }
+  @media screen and (min-width: 200px) {
+    .footer > h1 { font-size: 2.5vw; }
+    .top { min-height: 67vh; }
+  }
+  @media screen and (max-width: 500px) {
+    .footer > h1 { letter-spacing: 0.07vw; }
+  }
+  @media screen and (min-width: 520px) {
+    .footer > h1 { font-size: 1.75vw; }
+  }
+  @media screen and (min-width: 688px) {
+    .top { min-height: 76vh; }
+  }
+  @media screen and (min-width: 740px) {
+    .footer > h1 { font-size: 1.5vw; }
+  }
+  @media screen and (min-width: 900px) {
+    .footer > h1 { font-size: 1.25vw; }
+  }
+  @media screen and (min-width: 1200px) {
+    .footer > h1 { font-size: 1vw; }
+  }
+  span {
+    &.purple {
+      color: #C678DD;
+    }
+    &.red {
+      color: #E06C6E;
+    }
+    &.yellow {
+      color: #E5C074;
+    }
+    &.green {
+      color: #89C372;
+    }
+  }
+}

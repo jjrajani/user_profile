@@ -1,0 +1,51 @@
+.content-body-wrapper {
+  height: 100vh;
+  overflow: hidden;
+  width: 100vw;
+  margin: 0 auto;
+  position: relative;
+}
+.main-content-wrapper {
+  width: 100vw;
+  border: solid grey 1px;
+  #nav {
+    height: 8vh;
+  }
+  #router-output {
+    border: solid 1px #ccc;
+    width: 100vw;
+    height: 66vh;
+  }
+  .main-content {
+    height: 100%;
+    width: 100%;
+    max-height: 76vh;
+    background-color: white;
+    overflow-x: scroll;
+    padding: 2vh 2.5vw;
+    h1, h2 {
+      text-align: center;
+    }
+    h1 {
+      font-size: 2vh;
+    }
+    h2 {
+      font-size: 1.3vh;
+    }
+  }
+  @media screen and (min-width: 0px) {
+    max-height: 76vh;
+    #router-output {
+      height: 76vh;
+    }
+  }
+  @media screen and (min-width: 689px) {
+    height: 84vh;
+    #router-output {
+      height: 86vh;
+    }
+    .main-content {
+      max-height: 85vh;
+    }
+  }
+}

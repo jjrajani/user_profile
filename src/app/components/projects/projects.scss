@@ -1,0 +1,31 @@
+#projects {
+  // border: solid orange 3px;
+  width: 100%;
+  .ss-wrapper {
+    z-index: 1;
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    img {
+      z-index: 1;
+      width: 80%;
+      margin: 0 10%;
+    }
+    .screen-shot {
+      height: 60%;
+      width: 58%;
+      position: absolute;
+      background-size: 100%;
+      z-index: 2;
+      left: 21%;
+      top: 19%;
+    }
+    .my-garden-ss {
+      background-image: url('../../assets/my-garden-ss.png');
+    }
+    .cage-smash-ss {
+      background-image: url('../../assets/cage-smash-ss.png');
+    }
+  }
+}

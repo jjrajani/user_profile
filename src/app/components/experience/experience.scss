@@ -1,0 +1,73 @@
+#experience {
+  // border: solid purple 3px;
+  .category {
+    border: solid pink 2px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    p {
+      width: 100%;
+    }
+    .images {
+      // width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        margin: 1vh 2vw;
+      }
+    }
+  }
+  @media screen and (min-width: 200px) {
+    .dev img {
+      width: 12vw;
+    }
+    .retail img {
+      width: 8vw;
+      &:nth-child(2) {
+        width: 13vw;
+      }
+    }
+    .restaurants img {
+      width: 9vw;
+      &:nth-child(2) {
+        width: 12vw;
+      }
+    }
+  }
+  @media screen and (min-width: 703px) {
+    .dev img {
+      width: 8vw;
+    }
+    .retail img {
+      width: 6vw;
+      &:nth-child(2) {
+        width: 10vw;
+      }
+    }
+    .restaurants img {
+      width: 6vw;
+      &:nth-child(2) {
+        width: 8vw;
+      }
+    }
+  }
+  @media screen and (min-width: 1080px) {
+    .dev img {
+      width: 7vw;
+    }
+    .retail img {
+      width: 4.5vw;
+      &:nth-child(2) {
+        width: 7vw;
+      }
+    }
+    .restaurants img {
+      width: 4vw;
+      &:nth-child(2) {
+        width: 7vw;
+      }
+    }
+  }
+}

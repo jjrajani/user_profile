@@ -1,0 +1,61 @@
+#header {
+  // position: fixed;
+  height: 8vh;
+  width: 100vw;
+  padding: 0 10vw;
+  background: lightgrey;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #2d3545;
+  .name {
+    width: 33%;
+    font-weight: 600;
+    font-size: 1.3rem;
+  }
+  a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #2d3545;
+  }
+  .links {
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    i.github {
+      font-size: 3vw;
+      min-width: 25px;
+      margin-right: 1vw;
+    }
+    i.linkedin {
+      font-size: 3vw;
+      min-width: 25px;
+    }
+    i.github, i.linkedin {
+      &:hover {
+        color: lighten(#2d3545, 30%);
+        cursor: pointer;
+      }
+    }
+  }
+  @media screen and (max-width: 508px) {
+    .name {
+      font-size: 1rem;
+    }
+    .title {
+      font-size: 0.8rem;
+    }
+    i.github {
+      font-size: 5vw !important;
+    }
+    i.linkedin {
+      font-size: 5vw !important;
+    }
+  }
+  .title {
+    width: 33%;
+    text-align: right;
+  }
+}
